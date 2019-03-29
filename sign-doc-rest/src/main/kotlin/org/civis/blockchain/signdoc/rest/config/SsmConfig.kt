@@ -2,7 +2,6 @@ package org.civis.blockchain.signdoc.rest.config
 
 import org.civis.blockchain.ssm.client.SsmClient
 import org.civis.blockchain.ssm.client.SsmClientConfig
-import org.civis.blockchain.ssm.client.domain.Signer
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration

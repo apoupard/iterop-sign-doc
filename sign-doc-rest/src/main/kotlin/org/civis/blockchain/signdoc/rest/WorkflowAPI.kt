@@ -1,9 +1,7 @@
 package org.civis.blockchain.signdoc.rest
 
 import org.civis.blockchain.signdoc.rest.config.SignDocConfig
-import org.civis.blockchain.signdoc.rest.service.SignService
 import org.civis.blockchain.ssm.client.SsmClient
-import org.civis.blockchain.ssm.client.Utils.JsonUtils
 import org.civis.blockchain.ssm.client.domain.Context
 import org.civis.blockchain.ssm.client.repository.InvokeReturn
 import org.springframework.http.MediaType
@@ -11,8 +9,6 @@ import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RestController
-import java.io.ByteArrayInputStream
-import java.io.InputStream
 import java.util.concurrent.CompletableFuture
 
 @RestController

@@ -6,8 +6,6 @@ import org.civis.blockchain.ssm.client.domain.Agent
 import org.civis.blockchain.ssm.client.domain.Ssm
 import org.civis.blockchain.ssm.client.repository.InvokeReturn
 import org.springframework.stereotype.Service
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PostMapping
 import reactor.core.publisher.Mono
 
 @Service
