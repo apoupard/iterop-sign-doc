@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  iterop-sign-doc-rest:
+    image: civisblockchain/sign-doc
+    environment:
+      - coop_rest_url=http://peer0.pr-bc1.civis-blockchain.org:9090
+      - ssm_name=iterop-sign-document
+      - signer_admin_name=adrien
+      - signer_admin_file=file:/opt/iterop-sign-doc/adrien
+      - signer_user_name=iterop-sign-doc
+      - signer_user_file=file:/opt/iterop-sign-doc/iterop-sign-doc
+    volumes:
+      - ./infra/user:/opt/iterop-sign-doc/user
+    ports:
+      - 8888:8888
