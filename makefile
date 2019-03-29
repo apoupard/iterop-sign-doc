@@ -1,4 +1,4 @@
-NAME   	:= civisblockchain/sign-doc
+NAME   	:= civisblockchain/iterop-sign-doc
 IMG    	:= ${NAME}:${VERSION}
 LATEST  := ${NAME}:latest
 build:
@@ -8,5 +8,5 @@ tag-latest:
 	@docker tag ${IMG} ${LATEST}
 
 push:
-	@docker push ${IMG}
+	@docker push ${NAME}
 

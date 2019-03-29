@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   iterop-sign-doc-rest:
-    image: civisblockchain/sign-doc
+    image: civisblockchain/iterop-sign-doc
     environment:
       - coop_rest_url=http://peer0.pr-bc1.civis-blockchain.org:9090
       - ssm_name=iterop-sign-document
